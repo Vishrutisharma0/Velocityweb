@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Instructions</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+      * {margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin-left: 0px;
+}
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: linear-gradient(120deg, #38065d, #48126f);
+        height: 100vh;
+        overflow: hidden;
+        width:100w;
+        background-image: url('img5.jpg');
+
+background-size: 1700px 1000px;
+      }
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 50%;
+
+        border-radius: 10px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+      }
+      .center h1 {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid silver;
+      }
+      .center form {
+        padding: 0 40px;
+        box-sizing: border-box;
+      }
+      
+      .signup_link {
+position: relative;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       width: 20%;
+        height: 30px;
+        border: 1px solid;
+        background:#3adbe0;;
+        border-radius: 15px;
+    text-align: center;
+        font-size: 20px;
+        color: #e9f4fb;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+        margin-top: 17px;
+        margin-right:20px;
+        margin-left: -1px;
+      }
+      .signup_link a {
+        color: 	#000000;
+      text-align: center;
+        text-decoration: none;
+
+      }
+.signup_link:hover {
+  box-shadow: 0 5px 50px 0 #f6f2f7 inset, 0 5px 50px 0 #f6f2f7, 
+       0 5px 50px 0 #f6f2f7 inset, 0 5px 50px #f6f2f7;
+  
+}
+
+    a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+
+     
+      
+    </style>
+  </head>
+  <body>
+    <main>
+    <div class="center">
+      <h1 style="color:#3adbe0;;">Instructions</h1>
+      <p style="color: orange;"> 
+        <br>  1) The organisers will be available for any queries , you will have to raise your hand and then ask.
+        <br>  2) You can re-login to the game if you have entered the wrong answer by clicking on the replay button.
+        <br>  3)You need to present the appropriate response in the predetermined  configuration  strictly, even the smallest distinction can cause invalid output.
+        <br>  4)Our scoring framework thinks about time, a triumph input doesn't imply that you  dominated the match.
+        <br>  5)Decision of the coordinators will be conclusive.
+      </p>
+    <div class="signup_link">
+        <a href="{% url 'home' %}">Home</a>
+    </div>
+    </div>
+   </main>
+  </body>
+</html>
